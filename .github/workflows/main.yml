@@ -3,7 +3,10 @@ name: Deploy Website
 on:
   push:
     branches:
-      - main   # Run this when code is pushed to the main branch
+      - main   # change to master if needed
+
+permissions:
+  contents: write   # ✅ allows pushing to gh-pages
 
 jobs:
   deploy:
